@@ -8,13 +8,25 @@ html(lang="ru")
     block head
         head
             meta(charset="utf-8")
-            title Wedding
+            title Пригласительная на свадьбу Николая и Алины
+            meta(name="description" content="Дорогие родные и близкие! Приглашаем вас разделить радость особенного для нас события — нашей свадьбы!")
             meta(name="viewport" content="width=device-width, initial-scale=1")
             meta(name="apple-mobile-web-app-capable" content="yes")
             meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
             meta(content="ie=edge" http-equiv="x-ua-compatible")
+            <link rel="icon" href="/img/favicon.ico">
             <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+            <link rel="shortcut icon" href="/img/favicon.svg" type="image/svg+xml">
             link(href="/styles/gen.min.css" rel="stylesheet")
+
+            // Open Graph (OG) для соцсетей
+            meta(property="og:title" content="Пригласительная на свадьбу Николая и Алины")
+            meta(property="og:description" content="Дорогие родные и близкие! Приглашаем вас разделить радость особенного для нас события — нашей свадьбы!")
+            meta(property="og:image" content="https://nikolai-alina.ru/img/preview.jpg")
+            meta(property="og:image:width" content="1200")
+            meta(property="og:image:height" content="630")
+            meta(property="og:url" content="https://nikolai-alina.ru/")
+            meta(property="og:type" content="website")
 
     body
         block header

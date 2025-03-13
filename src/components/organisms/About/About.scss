@@ -31,6 +31,8 @@
             font-size: 34px;
             font-style: normal;
             line-height: 24px;
+            text-align: center;
+            color: var(--primary-color);
         }
     }
 
@@ -108,7 +110,7 @@
     &__picture {
         position: absolute;
         inset: 0;
-        transform: translateY(30px);
+        transform: translateY(15px);
 
         & img {
             width: 100%;
@@ -126,7 +128,7 @@
         width: 240px;
         //left: -17px;
         left: -37px;
-        transition: transform 0.1s ease-out;
+        //transition: transform 0.1s ease-out;
 
         & img {
             width: 100%;
@@ -147,7 +149,7 @@
         width: 170px;
         //right: -30px;
         right: -45px;
-        transition: transform 0.1s ease-out;
+        //transition: transform 0.1s ease-out;
 
         & img {
             width: 100%;
