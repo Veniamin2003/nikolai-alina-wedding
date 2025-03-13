@@ -1,0 +1,29 @@
+include /mixins/svg
+include ../../components/mixins
+
+block variables
+
+doctype html
+html(lang="ru")
+    block head
+        head
+            meta(charset="utf-8")
+            title Wedding
+            meta(name="viewport" content="width=device-width, initial-scale=1")
+            meta(name="apple-mobile-web-app-capable" content="yes")
+            meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+            meta(content="ie=edge" http-equiv="x-ua-compatible")
+            <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+            link(href="/styles/gen.min.css" rel="stylesheet")
+
+    body
+        block header
+
+        block content
+        block footer
+            +Overlay
+            +SuccessPopup
+        block scripts
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+            script(src='/scripts/libs.min.js' defer)
+            script(src='/scripts/gen.min.js' defer)

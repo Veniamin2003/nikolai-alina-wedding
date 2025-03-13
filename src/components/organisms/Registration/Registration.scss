@@ -1,0 +1,38 @@
+.o-registration {
+    max-width: 276px;
+    margin: 40px auto;
+
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        color: var(--primary-color);
+    }
+    &__desc {
+        text-align: center;
+    }
+
+    &__name {
+        width: 100%;
+    }
+
+    &__items {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__btn {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
