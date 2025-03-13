@@ -14,12 +14,13 @@ mixin Registration()
             .m-question.js-question
                 p.m-question__text.js-question__text Будут ли с вами дети?
                 .m-question__items
-                    label.m-question__label
-                        input(type="radio" name="q3" value="да").js-question__children
-                        span.m-question__custom-radio
-                        | да
-                    .m-question__input.js-question__input
-                        +Input('Напишите здесь количество, если да')
+                    .m-question__wrap
+                        label.m-question__label
+                            input(type="radio" name="q3" value="да").js-question__children
+                            span.m-question__custom-radio
+                            | да
+                        .m-question__input.js-question__input
+                            +Input('Напишите здесь количество, если да')
 
                     label.m-question__label
                         input(type="radio" name="q3" value="нет" checked)

@@ -141,9 +141,9 @@ export const InputMasks = () => {
         const nameInput = document.querySelector(".js-input__name input");
         const questionInput = document.querySelector(".js-question__input input");
 
-        // Ограничение на ввод только букв (запрет чисел и символов)
+        // Ограничение на ввод только букв и пробелов (запрет чисел и символов)
         nameInput.addEventListener("input", function () {
-            this.value = this.value.replace(/[^a-zA-Zа-яА-ЯёЁ]/g, ""); // Удаляет все не-буквенные символы (включая цифры и спецсимволы)
+            this.value = this.value.replace(/[^a-zA-Zа-яА-ЯёЁ\s]/g, ""); // Добавлен пробел (\s) в разрешённые символы
         });
 
         // Ограничение на ввод только чисел (запрет букв и символов)

@@ -1,25 +1,31 @@
 .m-question {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 
     &__text {
-        font-size: 14px;
+        font-size: 16px;
         color: var(--primary-color);
     }
     &__items {
         display: flex;
         flex-direction: column;
+        gap: 15px;
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
         gap: 10px;
     }
+
     &__label {
         display: flex;
         align-items: center;
         cursor: pointer;
-        font-size: 12px;
+        font-size: 16px;
         color: var(--primary-color);
         -webkit-tap-highlight-color: transparent;
     }
